@@ -43,7 +43,7 @@
     </label>
 
     @error('message')
-    <p class="border p-2 my-2" style="width: 300px; background-color: red;">
+    <p class="border p-2 my-2" style="width: 75%; background-color: rgba(255, 0, 0, 0.6); border-radius: 10px;"">
     {{$message}}</p>
     @enderror  
     <span class="line-form"></span>

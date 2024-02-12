@@ -12,23 +12,20 @@
   @endif
 
 <div class="Enunciado1">
-    <h2>Lorem ipsum dolor sit amet elit..</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, dolorum niahet dignissimos.</p>
+    <h2>Tu centro odontológico <strong>Sena Sonríe</strong></h2>
+    <p>Bienvenido a nuestro centro dental <strong>SENA Sonríe</strong> encuentra tu mejor opción a tu sonrisa.</p>
     <a href="{{route('Agendar.create')}}">Agendar una cita</a>
 </div>
-
-
 
 <div class="Enunciado2">
     <h2>Haz parte de nosotros</h2>
     <hr noshade="" class="line1">
-    <p>Lorem ipsum dolor sit amet adipisicing elit. Necessitatibus, laboriosam . Quidem 
-        sunt porro tempore quibusdam laudantium excepturi, in maiores
-         consequatur accusantium necessitatibus, repellat natus? Fuga delectus  veniam
-          doloribus. Ratione dolorem mollitia optio odio ex!
-           Facere sapiente officiis harum a molestiae veritatis placeat fugit alias dolor 
-            vel aliquam nulla debitis ab, numquam amet   ad doloremque, eius ipsum qleam
-             voluptate.</p>
+    <p>Unete a nuestra comunidad siendo usuario de <strong>SENA Sonríe</strong>
+    , registrate con la opción en el menu de navegación y obten la opción de reservar una
+  cita con nuestro equipo de especialistas y doctores. Conoce más sobre nuestros servicios que prestamos
+  revisa tus resevas una vez registrado en tu perfil, sabras cuantas tienes y los datos de la misma. De igual manera tienes
+  la opcion de cerrar sesión como tambien volver a iniciar la sesión con tus mismos datos anteriormente registrados.
+  Obten más información de nosotros en el fin de la pagina y nuestros lugares de atención.</p>
 </div>
 
 <div class="d-flex justify-content-around my-5 flex-wrap">
@@ -39,7 +36,7 @@
           </svg>
         <div class="card-body">
           <h5 class="card-title">Tratamientos dentales</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Tratamientos esteticos y saludables para una sonrisa mejorada, te atendemos con profesionales en el area.</p>
           <a href="{{route('Servicios')}}" class="btn" style="background-color: #01d09e">Ver más</a>
         </div>
       </div>
@@ -49,7 +46,7 @@
           </svg>
         <div class="card-body">
           <h5 class="card-title">Reserva tu cita</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Llena el formulario con tus datos personales y reserva una cita en nuestros aplicativo.</p>
           <a href="{{route ('Agendar.create')}}" class="btn" style="background-color: #01d09e">Ver más</a>
         </div>
       </div>
@@ -59,7 +56,7 @@
           </svg>
         <div class="card-body">
           <h5 class="card-title">Acerca de nosotros</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Conoce más de nosotros, nuestros objetivos con nuestros clientes y más.</p>
           <a href="#" class="btn" style="background-color: #01d09e">Ver más</a>
         </div>
       </div>

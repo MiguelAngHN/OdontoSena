@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,12 +36,12 @@
                     {{-- @else --}}
                     @if (auth()->check())
                         <a class="nav-link active px-2" aria-current="page" href="{{route('reservas.index')}}"><b>{{auth()->user()->Nombres}} {{auth()->user()->Apellidos}}</b></a>
-                        <a class="nav-link px-2" aria-current="page" href="#">Servicios</a>
+                        <a class="nav-link px-2" aria-current="page" href="{{route('Servicios')}}">Servicios</a>
                         <a class="nav-link active bg-danger rounded-3 px-2" aria-current="page" href="{{route('login.destroy')}}"><b>Log Out</b></a>
                         @else
                         <a class="nav-link active px-2" aria-current="page" href="{{route('register.index')}}"><b>Registrarme</b></a>
                         <a class="nav-link active px-2" aria-current="page" href="{{route('login.index')}}"><b>Login</b></a>
-                        <a class="nav-link px-2" aria-current="page" href="#">Servicios</a>
+                        <a class="nav-link px-2" aria-current="page" href="{{route('Servicios')}}">Servicios</a>
                         @endif
                         {{-- @endif --}}
                 </div>
@@ -79,7 +79,7 @@
                 </span>
                 
                 <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> -->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
