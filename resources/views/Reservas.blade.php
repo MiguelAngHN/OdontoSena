@@ -22,7 +22,9 @@
             <span><strong>Apellidos:</strong> {{ $reserva->Apellidos }}</span>
             <span><strong>Identificación:</strong> {{ $reserva->Identificacion }}</span>
             <span><strong>Email:</strong> {{ $reserva->email }}</span>
+            <span><strong>Odontologo:</strong> {{ $reserva->odontologo->Nombres}} {{ $reserva->odontologo->Apellidos}} ({{ $reserva->odontologo->Area}})</span>
     </div>
+
     @endforeach
 </body>
 </html>

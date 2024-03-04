@@ -3,6 +3,7 @@
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OdontologoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,3 +42,7 @@ Route::get('reservas', [AgendaController::class, 'show'])->name('reservas.index'
 Route::get('Servicios', function() {
     return view('Servicios');
 })->name('Servicios');
+
+Route::get('Odontologo', [OdontologoController::class, 'create'])->name('Odontologo.create');
+Route::post('Odontologo', [OdontologoController::class, 'store'])->name('Odontologo.store');
+Route::get('Odontologos', [OdontologoController::class, 'show'])->name('Odontologo.show');

@@ -43,6 +43,19 @@
     <p class="border p-2 my-2" style="width: 75%; background-color: rgba(255, 0, 0, 0.6); border-radius: 10px;">
     {{$message}}</p>
     @enderror 
+    <label for="odontologo">
+        Odontologo:
+        <br>
+        {{-- @if (session()->has('odontologos')) --}}
+        <select name="odontologo_id" class="border border-gray-200 rounded-md bg-gray-200 w-full tex-lg placeholder-gray-900 p-2 my-1 focus:bg-white" required>
+            @foreach(session('odontologos') as $odontologo)
+            <option value="{{ $odontologo->id }}">{{ $odontologo->Nombres }} {{ $odontologo->Apellidos }} - ({{ $odontologo->Area }})</option>
+            <option value="{{ $odontologo->id }}">{{ $odontologo->Nombres }} {{ $odontologo->Apellidos }} - ({{ $odontologo->Area }})</option>
+        @endforeach
+        </select>
+        {{-- @endif --}}
+    </label><br>
+    
     <span class="line-form"></span>
     <button type="submit" class="Form-submit">Reservar</button>
 

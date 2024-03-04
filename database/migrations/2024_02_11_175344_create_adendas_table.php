@@ -21,6 +21,9 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
 
+            $table->unsignedBigInteger('odontologo_id')->nullable();
+            $table->foreign('odontologo_id')->references('id')->on('odontologos')->onDelete('cascade')->onUpdate('cascade');
+
             $table->timestamps();
         });
     }
